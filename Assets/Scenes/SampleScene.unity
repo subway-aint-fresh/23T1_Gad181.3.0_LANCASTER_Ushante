@@ -269,6 +269,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5ca74613d002414b9d469bd58f166d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 15
+  leftKey: 276
+  rightKey: 275
+  jumpKey: 273
 --- !u!1 &78489899
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,7 +629,6 @@ GameObject:
   - component: {fileID: 731012042}
   - component: {fileID: 731012041}
   - component: {fileID: 731012040}
-  - component: {fileID: 731012039}
   m_Layer: 0
   m_Name: P2
   m_TagString: Untagged
@@ -632,18 +636,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &731012039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 731012038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f4d65b7cef640748b637351d2f7962e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &731012040
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -890,7 +882,7 @@ GameObject:
   - component: {fileID: 1120208880}
   m_Layer: 0
   m_Name: Bottom Frame
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1001,7 +993,7 @@ GameObject:
   - component: {fileID: 1471464642}
   m_Layer: 0
   m_Name: 'P2.1 '
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1112,7 +1104,7 @@ GameObject:
   - component: {fileID: 1476070109}
   m_Layer: 0
   m_Name: 'P3.0 '
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1334,7 +1326,7 @@ GameObject:
   - component: {fileID: 1546279592}
   m_Layer: 0
   m_Name: P1.0
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1347,7 +1339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546279590}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.334741, y: -2.2045977, z: -0.07445392}
+  m_LocalPosition: {x: -3.334741, y: -2.04, z: -0.07445392}
   m_LocalScale: {x: 13.62748, y: 0.4995, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1445,7 +1437,7 @@ GameObject:
   - component: {fileID: 1660020513}
   m_Layer: 0
   m_Name: P1.1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1458,7 +1450,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660020511}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.56, y: -2.2045977, z: -0.07445392}
+  m_LocalPosition: {x: 6.59, y: -2.09, z: -0.07445392}
   m_LocalScale: {x: 1.3477577, y: 0.4995, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1556,7 +1548,7 @@ GameObject:
   - component: {fileID: 1879401367}
   m_Layer: 0
   m_Name: P3.1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1700,7 +1692,7 @@ GameObject:
   - component: {fileID: 2138334756}
   m_Layer: 0
   m_Name: P2.0
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
