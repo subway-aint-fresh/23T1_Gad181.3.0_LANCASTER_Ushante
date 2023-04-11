@@ -5,47 +5,53 @@ using UnityEngine;
 
 public class Lift : MonoBehaviour
 {
-    //lift asset 1
-    public Rigidbody2D elevator;
+    public float speed; // The speed of the platform
+    public Transform targetPoint; // The point the platform should move to
 
-    public float speed;
-    private float elevatorPosition;
-    private bool isButtonPressed;
+    private bool movePlatform;
+    private Vector3 initialPosition;
+
+    public Rigidbody2D platform;
 
     private void Start()
     {
-        elevatorPosition = 1;
-        isButtonPressed = false;
+        initialPosition = platform.transform.position;
+        movePlatform = false;
     }
 
     private void Update()
     {
-        if (isButtonPressed)
+        if (movePlatform)
         {
-            elevator.transform.position = new Vector2(transform.position.x, transform.position.y + elevatorPosition);
+            platform.transform.position = Vector2.MoveTowards(platform.transform.position, targetPoint.position, speed * Time.deltaTime);
+
+            if (platform.transform.position == targetPoint.position)
+            {
+                movePlatform = false;
+            }
         }
     }
 
-    //elevator moves up while button stepped on
     private void OnTriggerStay2D(Collider2D other)
     {
+        
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Button is being pressed");
-
-            //move elevator
-            isButtonPressed = true;
+            // Set the movePlatform to true to start moving the platform
+            movePlatform = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Button Left");
+            // Set the movePlatform to false to stop moving the platform
+            movePlatform = false;
 
-            //move elevator back
-            isButtonPressed = false;
+            // Reset the platform's position to the initial position
+            platform.transform.position = initialPosition;
         }
     }
 }
