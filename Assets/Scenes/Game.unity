@@ -399,7 +399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   targetPoint: {fileID: 1779568009}
-  platform: {fileID: 1138060978}
+  platform: {fileID: 0}
 --- !u!61 &110539517
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1100,7 +1100,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1138060975}
   - component: {fileID: 1138060976}
-  - component: {fileID: 1138060978}
   - component: {fileID: 1138060977}
   m_Layer: 0
   m_Name: Elevator
@@ -1202,27 +1201,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &1138060978
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138060974}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 200
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 5
 --- !u!1 &1277718743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,7 +1930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   targetPoint: {fileID: 1779568009}
-  platform: {fileID: 1138060978}
+  platform: {fileID: 0}
 --- !u!61 &2136944512
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1989,6 +1967,10 @@ PrefabInstance:
     - target: {fileID: 516197756103273767, guid: 645857abd2303604fb3bd4e8bc01f6c0, type: 3}
       propertyPath: m_Name
       value: P2
+      objectReference: {fileID: 0}
+    - target: {fileID: 516197756103273769, guid: 645857abd2303604fb3bd4e8bc01f6c0, type: 3}
+      propertyPath: m_Size.x
+      value: 0.88
       objectReference: {fileID: 0}
     - target: {fileID: 516197756103273770, guid: 645857abd2303604fb3bd4e8bc01f6c0, type: 3}
       propertyPath: m_RootOrder
@@ -2043,6 +2025,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5730776212458492688, guid: 0eefd82b1295ffb4d878fcf459c9eab1, type: 3}
+      propertyPath: m_Size.x
+      value: 0.88
+      objectReference: {fileID: 0}
     - target: {fileID: 5730776212458492692, guid: 0eefd82b1295ffb4d878fcf459c9eab1, type: 3}
       propertyPath: m_Name
       value: P1

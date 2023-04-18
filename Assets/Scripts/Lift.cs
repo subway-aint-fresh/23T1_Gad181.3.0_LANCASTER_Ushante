@@ -32,6 +32,10 @@ public class Lift : MonoBehaviour
         }
     }
 
+    private void FixedUpdate(){
+        
+    }
+
     private void OnTriggerStay2D(Collider2D other)
     {
         
