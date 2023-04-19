@@ -6,12 +6,13 @@ using UnityEngine;
 public class Lift : MonoBehaviour
 {
     public float speed; // The speed of the platform
-    public Transform targetPoint; // The point the platform should move to
+    public Transform targetPoint1; // The point the platform should move to
+    //public Transform targetPoint2; // The point the platform should move back to 
 
     private bool movePlatform;
     private Vector3 initialPosition;
 
-    public Rigidbody2D platform;
+    public GameObject platform;
 
     private void Start()
     {
@@ -19,21 +20,17 @@ public class Lift : MonoBehaviour
         movePlatform = false;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (movePlatform)
         {
-            platform.transform.position = Vector2.MoveTowards(platform.transform.position, targetPoint.position, speed * Time.deltaTime);
+            platform.transform.position = Vector2.MoveTowards(platform.transform.position, targetPoint1.position, speed * Time.deltaTime);
 
-            if (platform.transform.position == targetPoint.position)
+            if (platform.transform.position == targetPoint1.position)
             {
                 movePlatform = false;
             }
         }
-    }
-
-    private void FixedUpdate(){
-        
     }
 
     private void OnTriggerStay2D(Collider2D other)

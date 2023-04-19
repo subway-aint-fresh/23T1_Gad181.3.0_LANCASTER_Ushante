@@ -398,8 +398,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  targetPoint: {fileID: 1779568009}
-  platform: {fileID: 0}
+  targetPoint1: {fileID: 1779568009}
+  platform: {fileID: 1138060974}
 --- !u!61 &110539517
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1929,8 +1929,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  targetPoint: {fileID: 1779568009}
-  platform: {fileID: 0}
+  targetPoint1: {fileID: 1779568009}
+  platform: {fileID: 1138060974}
 --- !u!61 &2136944512
 BoxCollider2D:
   m_ObjectHideFlags: 0
