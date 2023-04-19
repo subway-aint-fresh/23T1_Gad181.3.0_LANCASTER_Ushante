@@ -6,13 +6,14 @@ using UnityEngine;
 
 public class Poison : MonoBehaviour
 {
-    public GameObject endScreen; //end screen pop up
     public GameObject p1;
     public GameObject p2;
 
+    public GameObject endScreen; //end screen pop up
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("PlayerFeet"))
         {
             //endgame, throw up end screen
             Debug.Log("End game");
