@@ -7,28 +7,37 @@ public class Lift : MonoBehaviour
 {
     public float speed; // The speed of the platform
     public Transform targetPoint1; // The point the platform should move to
-    //public Transform targetPoint2; // The point the platform should move back to 
+    public Transform targetPoint2; // The point the platform should move back to 
 
-    private bool movePlatform;
-    private Vector3 initialPosition;
+    private bool movePlatformUp;
+    private bool movePlatformDown;
 
     public GameObject platform;
 
     private void Start()
     {
-        initialPosition = platform.transform.position;
-        movePlatform = false;
+        movePlatformUp = false;
     }
 
     private void FixedUpdate()
     {
-        if (movePlatform)
+        if (movePlatformUp)
         {
             platform.transform.position = Vector2.MoveTowards(platform.transform.position, targetPoint1.position, speed * Time.deltaTime);
 
             if (platform.transform.position == targetPoint1.position)
             {
-                movePlatform = false;
+                movePlatformUp = false;
+            }
+        }
+
+        if (movePlatformDown)
+        {
+            platform.transform.position = Vector2.MoveTowards(platform.transform.position, targetPoint2.position, speed * Time.deltaTime);
+
+            if (platform.transform.position == targetPoint2.position)
+            {
+                movePlatformDown = false;
             }
         }
     }
@@ -39,7 +48,7 @@ public class Lift : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             // Set the movePlatform to true to start moving the platform
-            movePlatform = true;
+            movePlatformUp = true;
         }
     }
 
@@ -48,11 +57,8 @@ public class Lift : MonoBehaviour
         
         if (other.gameObject.CompareTag("Player"))
         {
-            // Set the movePlatform to false to stop moving the platform
-            movePlatform = false;
+            movePlatformDown = true;
 
-            // Reset the platform's position to the initial position
-            platform.transform.position = initialPosition;
         }
     }
 }
