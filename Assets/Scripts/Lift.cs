@@ -49,6 +49,7 @@ public class Lift : MonoBehaviour
         {
             // Set the movePlatform to true to start moving the platform
             movePlatformUp = true;
+            movePlatformDown = false;
         }
     }
 
@@ -57,6 +58,7 @@ public class Lift : MonoBehaviour
         
         if (other.gameObject.CompareTag("Player"))
         {
+            movePlatformUp = false;
             movePlatformDown = true;
 
         }

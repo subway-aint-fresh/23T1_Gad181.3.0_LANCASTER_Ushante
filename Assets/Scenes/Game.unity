@@ -397,7 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb18c7a56623204b978df3007c62b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 2
   targetPoint1: {fileID: 1779568009}
   targetPoint2: {fileID: 814302431}
   platform: {fileID: 1138060974}
@@ -2014,7 +2014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb18c7a56623204b978df3007c62b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 2
   targetPoint1: {fileID: 1779568009}
   targetPoint2: {fileID: 814302431}
   platform: {fileID: 1138060974}
