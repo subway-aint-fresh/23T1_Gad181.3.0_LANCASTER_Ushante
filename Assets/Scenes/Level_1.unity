@@ -218,7 +218,7 @@ RectTransform:
   - {fileID: 1933401546}
   - {fileID: 74601624}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -334,7 +334,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.21, y: 0.86}
+  m_Size: {x: 0.58, y: 0.74}
   m_EdgeRadius: 0
 --- !u!212 &110539518
 SpriteRenderer:
@@ -745,7 +745,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731012038 stripped
 GameObject:
@@ -1086,16 +1086,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291451689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.04, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.5361503, y: -1.6471734, z: 0}
+  m_LocalScale: {x: 0.9433963, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1998642275}
   - {fileID: 293782169}
   - {fileID: 1737804668}
   - {fileID: 2138848854}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 2018097061}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1359426607 stripped
 Transform:
@@ -5248,8 +5248,9 @@ Transform:
   m_Children:
   - {fileID: 188847049}
   - {fileID: 1359426607}
+  - {fileID: 1291451691}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2136944508
 GameObject:
@@ -5712,7 +5713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 516197756103273770, guid: 645857abd2303604fb3bd4e8bc01f6c0, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 516197756103273770, guid: 645857abd2303604fb3bd4e8bc01f6c0, type: 3}
       propertyPath: m_LocalScale.x
@@ -5845,7 +5846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5730776212458492695, guid: 0eefd82b1295ffb4d878fcf459c9eab1, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5730776212458492695, guid: 0eefd82b1295ffb4d878fcf459c9eab1, type: 3}
       propertyPath: m_LocalScale.x
