@@ -1095,7 +1095,7 @@ Transform:
   - {fileID: 1737804668}
   - {fileID: 2138848854}
   m_Father: {fileID: 2018097061}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1359426607 stripped
 Transform:
@@ -5228,7 +5228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2018097061}
   m_Layer: 0
-  m_Name: Stage
+  m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5247,8 +5247,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 188847049}
-  - {fileID: 1359426607}
   - {fileID: 1291451691}
+  - {fileID: 1359426607}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
