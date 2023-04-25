@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
    public void onStartGameButtonPress()
     {
-        SceneManager.LoadScene("Game");
+        //change this to initialize so it can be changed within editor
+        SceneManager.LoadScene("Level_1");
     }
 }
