@@ -11,12 +11,14 @@ public class PlayerController : MonoBehaviour
     public KeyCode jumpKey;
 
     private Rigidbody2D rb;
+    private AudioSource jumpAudio;
 
     [SerializeField] private bool isGrounded;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        jumpAudio = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -38,6 +40,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             isGrounded = false;
+            jumpAudio.Play();
         }
     }
 
